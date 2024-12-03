@@ -21,8 +21,8 @@ class MukeshAPI:
     
     def __init__(self)->None:
         """Api for various purpose
-    support group : https://t.me/the_support_chat
-    owner : @mr_sukkun
+    support group : https://t.me/OFFICIAL_MAMBA_SUPPORT
+    owner : @BLACKMAMBA_HU_VRO
         """
         pass
     
@@ -57,7 +57,7 @@ class MukeshAPI:
             json_text = extracted_json.replace('\n', ' ')
 
             data = json.loads(json_text)
-            return {"results":data["text"],"join": "@Mr_Sukkun", "success": True
+            return {"results":data["text"],"join": "@BLACKMAMBA_HU-VRO", "success": True
                     }
         except Exception as e:
             return e   
@@ -250,7 +250,7 @@ class MukeshAPI:
             response = requests.post(url, headers=headers, data=json.dumps(payload))
             if response.status_code == 200:
                 generated_text = response.json()["candidates"][0]["content"]["parts"][0]["text"]
-                return {"results":generated_text,"join": "@Mr_Sukkun", "success": True}
+                return {"results":generated_text,"join": "@BLACKMAMBA_HU_VRO", "success": True}
         except Exception as e:
             return e
     
