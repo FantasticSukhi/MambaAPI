@@ -15,19 +15,19 @@ with open("README.md", encoding="utf8") as readme:
 
 # Setting up
 setup(
-    name="MukeshAPI",
+    name="MambaAPI",
     version=version(),
-    author="Mukesh | noob-mukesh",
+    author="Mamba | FantasticSukhi",
     author_email="itzcodermukesh@gmail.com",
-    description="python api hub | MukeshAPI",
+    description="python api hub | MambaAPI",
     long_description_content_type="text/markdown",
     long_description=long_desc,
     packages=find_packages(),
     license="MIT",
-    url="https://github.com/noob-mukesh/MukeshAPI",
-    download_url="https://github.com/Noob-mukesh/MukeshAPI/blob/main/README.md",
+    url="https://github.com/FantasticSukhi/MambaAPI",
+    download_url="https://github.com/FantasticSukhi/MambaAPI/blob/main/README.md",
     install_requires=["pytz>=2023.3","requests-html","pillow","lxml_html_clean"],
-    keywords=['python', "MukeshAPI","flask"],
+    keywords=['python', "MambaAPI","flask"],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
@@ -53,9 +53,9 @@ setup(
     ],
     
     project_urls={
-        "Tracker": "https://github.com/noob-mukesh/MukeshAPI/issues",
-        "Community": "https://t.me/mr_sukkun",
-        "Source": "https://github.com/noob-mukesh/MukeshAPI",
+        "Tracker": "https://github.com/FantasticSukhi/MambaAPI/issues",
+        "Community": "https://t.me/BLACKMAMBA_HU_VRO",
+        "Source": "https://github.com/FantasticSukhi/MambaAPI",
     },
     python_requires="~=3.7",
 )
