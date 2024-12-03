@@ -42,10 +42,10 @@ class MukeshAPI:
         >>> response = api.datagpt("What are the latest trends in AI?")
         >>> print(response)
         """
-        url = m("aHR0cHM6Ly9hcHAuY3JlYXRvci5pby9hcGkvY2hhdA==").decode("utf-8")
+        url = m("aHR0cHM6Ly9hcHAuY3JlYXRvci5pby9jaGF0L0JsYWNrTWFtYmE=").decode("utf-8")
         payload = {
             "question": args,
-            "chatbotId": "712544d1-0c95-459e-ba22-45bae8905bed",
+            "chatbotId": "0110d85b-18f0-4e05-b1bf-c33943b0aa7f",
             "session_id": "8a790e7f-ec7a-4834-be4a-40a78dfb525f",
             "site": "datacareerjumpstart.mykajabi.com"
         }
@@ -110,7 +110,7 @@ class MukeshAPI:
         }
         """
 
-        url = m('aHR0cHM6Ly93d3cuYmxhY2tib3guYWkvYXBpL2NoYXQ=').decode("utf-8")
+        url = m('aHR0cHM6Ly9hcHAuY3JlYXRvci5pby9jaGF0L0JsYWNrTWFtYmE=').decode("utf-8")
         
         payload = {
             "agentMode": {},
@@ -140,7 +140,7 @@ class MukeshAPI:
         try:
             response = requests.post(url, json=payload, headers=headers)
             if response.status_code == 200:
-                return {"results": response.text, "join": "@Mr_Sukkun", "success": True}
+                return {"results": response.text, "join": "@BLACKMAMBA_HU_VRO", "success": True}
         except Exception as e:
             return e  
     
@@ -174,11 +174,11 @@ class MukeshAPI:
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
         }
             response = session.post(url, headers=headers, data=json.dumps(response_data))
-            return {"results":response.json()["response"],"join": "@Mr_Sukkun", "success": True}
+            return {"results":response.json()["response"],"join": "@BLACKMAMBA_HU_VRO", "success": True}
         else:
             try:
                 result = gpt_4_mode(args, mode)
-                return {"results":result,"join": "@Mr_Sukkun", "success": True}
+                return {"results":result,"join": "@BLACKMAMBA_HU_VRO", "success": True}
                 
             except Exception as e:
                 return e  
@@ -220,7 +220,7 @@ class MukeshAPI:
         """
         
         word = random.choice(wordshub)
-        return {"results": word, "join": "@Mr_Sukkun", "sucess": True}
+        return {"results": word, "join": "@BLACKMAMBA_HU_VRO", "sucess": True}
     
     @staticmethod
     def gemini(args: str) -> dict:
@@ -414,7 +414,7 @@ class MukeshAPI:
                         "movie_genre": movie_genre,
                         "movie_actors": movie_actors,
                         "movie_trailer": movie_trailer,
-                        "join": "@Mr_Sukkun",
+                        "join": "@BLACKMAMBA_HU_VRO",
                         "success": True,
                     })
                     return {"results": output}
@@ -447,7 +447,7 @@ class MukeshAPI:
         output = {
             "input": args,
             "results": cipher,
-            "join": "@Mr_Sukkun",
+            "join": "@BLACKMAMBA_HU_VRO",
             "sucess": True
         }
         return (output)
@@ -486,7 +486,7 @@ class MukeshAPI:
         output = {
             "input": args,
             "results": decipher,
-            "join": "@Mr_Sukkun",
+            "join": "@BLACKMAMBA_HU_VRO",
             "success": True
         }
         return output
@@ -523,7 +523,7 @@ class MukeshAPI:
             image_tags = soup.find_all('img')
             image_urls = [img['src'] for img in image_tags if img['src'].startswith('https://media.istockphoto.com')]
             
-            return {"results": image_urls, "join": "@Mr_Sukkun", "success": True}
+            return {"results": image_urls, "join": "@BLACKMAMBA_HU_VRO", "success": True}
         else:
             return {f"status code: {response.status_code}"}
       
@@ -680,7 +680,7 @@ class MukeshAPI:
         for index, item in enumerate(items, 1):
             result.append((index, item))
 
-        return {"results": result, "join": "@Mr_Sukkun", "sucess": True}
+        return {"results": result, "join": "@BLACKMAMBA_HU_VRO", "sucess": True}
     
     @staticmethod
     def github(args):
@@ -855,4 +855,3 @@ class MukeshAPI:
         
             
 api=MukeshAPI()
-
